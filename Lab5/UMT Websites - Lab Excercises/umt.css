@@ -1,0 +1,266 @@
+/*BODY STYLES*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #29162f;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER STYLES */
+header {
+    font-family: 'Quicksand', sans-serif;
+    background: #3a0045;
+    color: #fff;
+    padding: 1px 0 1px 0;
+    text-align: center;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.12);
+    position: relative;
+}
+
+/* IMAGE STYLES */
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    z-index: 1; /* Lower than nav or dropdown */
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    text-align: justify;
+}
+
+/* SEARCH BAR STYLES */
+.search-form {
+    display: flex;
+    margin-top: 8px;
+    margin-right: auto;
+}
+.search-form input[type="text"] {
+    padding: 5px 0.5px;
+    border: 3px solid #5b146d6d;
+    border-radius: 4px 0 0 4px;
+}
+.search-form button {
+    padding: 6px 14px;
+    border: none;
+    background: #350b63;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+.search-form button:hover,
+.search-form button:focus {
+    background: #f993c8;
+}
+
+/* NAVIGATION BAR WITH DROPDOWN*/
+nav {
+    position: relative;
+    z-index: 10; /* Makes entire nav above background images */
+}
+nav img {
+    width: auto;
+    height: 50px;
+    margin-right: auto;
+    border-radius: 8px;
+}
+nav ul {
+    font-family: 'Quicksand', sans-serif;
+    background: #ffffff;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+nav ul li {
+    margin-right: 5px;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    color: #3a0045;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 14px 20px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background: #a069dfb5;
+    color: #3a0045;
+}
+
+/* Dropdown menu styles */
+nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 150px;
+    background: #ebdef9a2;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.10);
+    border-radius: 8px;
+}
+nav ul .dropdown-content li {
+    margin: 0;
+}
+nav ul .dropdown-content li a {
+    padding: 12px 18px;
+    color: #3a0045;
+    font-size: 0.97em;
+}
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+
+/* MAIN CONTENT STYLES */
+main {
+    max-width: 950px;
+    margin: 40px auto 0 auto;
+    padding: 30px 24px;
+    background: rgba(73, 48, 124, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 2px 30px rgba(31,18,58,.10);
+}
+
+/* Headings */
+h1 {
+    color: #fefcff;
+}
+h2 {
+    color: #170520;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin: 28px 0;
+    color: #000000;
+}
+table th, table td {
+    padding: 10px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+table th {
+    font-weight: bold;
+    background: #8400ff;
+    color: #ffffff;
+}
+
+/* Article Content */
+article p,
+article ul {
+    line-height: 1.5;
+}
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    padding: 6px;
+    background: #3a0045;
+    color: #dfc8e2;
+}
+.footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-img {
+    height: 65px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* FOOTER WIDGETS (COMBINED CSS) */
+.site-footer-widgets {
+    display: flex;
+    flex-wrap: wrap;
+    background: #392363;
+    color: #ffffff;
+    gap: 10px;
+    padding: 20px 5px 20px 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.site-footer-widgets .footer-col {
+    flex: 5px;
+    padding-left: 50px; 
+}
+
+/* Combined text styling for all footer widget text elements */
+
+.site-footer-widgets ul,
+.site-footer-widgets ul li a {
+    font-size: 0.97em;
+    color: #f0e2fc;
+    padding-left: 1.7px;
+    text-decoration: none; 
+}
+
+/* List item with separator */
+.site-footer-widgets ul li {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #c2a3e949;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: left;
+    display: list-item;  
+}
+
+.site-footer-widgets ul li a:hover {
+    color: #f993c8;
+    text-decoration: underline;
+}
+
+/* CARD STYLES FOR CONTENT */
+.card-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    color: #5b5b5b;
+    background: #f2e8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(52,11,99,.1);
+    padding: 1.5em;
+    width: 200px;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 6px 24px rgba(52,11,99,.2);
+}
+.card h4 {
+    margin: 15px;
+    color: #3a0045;
+}
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #6e0a8f;
+    color: #fff;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.button:hover{
+    background: #3a0045;
+}
